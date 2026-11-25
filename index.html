@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>心安在家｜拜倫·凱蒂《A Mind at Home with Itself》閱讀摘要與心得</title>
+<meta name="description" content="拜倫·凱蒂《心安在家》閱讀摘要與心得：轉念功課不是用頭腦想出來的，而是透過身體去感受、去見證對念頭的質疑。">
+<meta property="og:title" content="心安在家｜A Mind at Home with Itself 閱讀心得">
+<meta property="og:description" content="唯一有意義的關係，是你和你自己的關係。">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#f5efe6">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+<style>
+  :root {
+    --bg: #f5efe6;
+    --paper: #fffdf9;
+    --ink: #2b2420;
+    --muted: #7a6b60;
+    --line: #e6dccd;
+    --accent: #a2552f;
+    --accent-soft: #f4e3d6;
+    --gold: #b7862a;
+    --gold-soft: #f8edd3;
+    --cold: #4b5d78;
+    --cold-soft: #e4e9f1;
+    --radius: 18px;
+    --serif: "Noto Serif TC", "Songti TC", "PMingLiU", "MingLiU", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1b1714;
+      --paper: #25201c;
+      --ink: #f2ebe3;
+      --muted: #b9ab9e;
+      --line: #3a322b;
+      --accent: #eba67f;
+      --accent-soft: #3a2a20;
+      --gold: #e8c47a;
+      --gold-soft: #352c1b;
+      --cold: #a9bbd6;
+      --cold-soft: #232a36;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: var(--sans); line-height: 1.85; font-size: 17px;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 0 20px 64px; }
+  .back { display: inline-block; margin: 20px 0 0; font-size: .88rem; color: var(--muted); text-decoration: none; }
+  .back:hover { color: var(--accent); }
+
+  header.hero { padding: 48px 0 32px; text-align: center; }
+  .hero .emoji { font-size: 2.6rem; line-height: 1; }
+  .hero h1 { font-family: var(--serif); font-size: clamp(2.1rem, 8vw, 2.9rem); letter-spacing: .14em; margin: 16px 0 8px; }
+  .hero .sub { margin: 0; color: var(--muted); font-size: .98rem; }
+  .hero .orig { margin: 6px 0 0; color: var(--muted); font-size: .82rem; font-style: italic; }
+  .facts { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .facts span { font-size: .82rem; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 3px 12px; }
+
+  .opening {
+    margin: 28px auto 0; padding: 26px 24px 20px; text-align: left;
+    background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+  }
+  .opening blockquote { border: 0; padding: 0; font-size: 1.14rem; }
+  .opening .src { margin: 14px 0 0; font-size: .84rem; color: var(--muted); }
+
+  section { margin-top: 56px; }
+  h2 { font-family: var(--serif); font-size: 1.4rem; margin: 0 0 20px; display: flex; align-items: center; gap: 10px; }
+  h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+  .card {
+    background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 22px 22px 18px;
+  }
+  .card p { margin: 0 0 12px; } .card p:last-child { margin: 0; }
+  .label { display: block; font-size: .78rem; font-weight: 700; color: var(--accent); letter-spacing: .1em; margin-bottom: 4px; }
+
+  /* 相遇歷程 */
+  .journey { list-style: none; margin: 0; padding: 0; position: relative; }
+  .journey::before { content: ""; position: absolute; left: 17px; top: 18px; bottom: 30px; width: 2px; background: var(--line); }
+  .journey li { position: relative; padding: 0 0 22px 54px; }
+  .journey li:last-child { padding-bottom: 0; }
+  .journey li::before {
+    content: attr(data-ic); position: absolute; left: 0; top: 0;
+    width: 36px; height: 36px; border-radius: 50%;
+    background: var(--paper); border: 2px solid var(--accent);
+    display: grid; place-items: center; font-size: 1rem;
+  }
+  .journey b { font-family: var(--serif); font-size: 1.05rem; display: block; line-height: 1.5; padding-top: 4px; margin-bottom: 4px; }
+  .journey p { margin: 0 0 8px; font-size: .97rem; } .journey p:last-child { margin: 0; }
+
+  /* 黑洞 → 太陽 */
+  .shift { display: grid; gap: 12px; }
+  .state { border-radius: var(--radius); padding: 22px 22px 18px; }
+  .state .tag { display: inline-block; font-size: .78rem; font-weight: 700; letter-spacing: .1em; margin-bottom: 6px; }
+  .state h3 { font-family: var(--serif); font-size: 1.15rem; margin: 0 0 10px; line-height: 1.5; display: flex; gap: 10px; align-items: center; }
+  .state p { margin: 0 0 10px; } .state p:last-child { margin: 0; }
+  .state.cold { background: var(--cold-soft); }
+  .state.cold .tag { color: var(--cold); }
+  .state.warm { background: var(--gold-soft); }
+  .state.warm .tag { color: var(--gold); }
+  .turn {
+    justify-self: center; text-align: center; font-size: .92rem; color: var(--muted);
+    padding: 4px 16px; line-height: 1.6;
+  }
+  .turn .arrow { display: block; font-size: 1.3rem; color: var(--accent); }
+  .turn .pair { display: inline-block; margin-top: 4px; font-family: var(--serif); color: var(--ink); font-size: 1rem; }
+  .turn .pair s { color: var(--muted); }
+
+  .question {
+    background: var(--paper); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+    border-radius: var(--radius); padding: 22px 22px 18px;
+  }
+  .question .q { font-family: var(--serif); font-size: 1.1rem; margin: 0 0 12px; }
+  .question p { margin: 0 0 12px; } .question p:last-child { margin: 0; }
+
+  .theme {
+    background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 24px 24px 20px; margin-bottom: 18px;
+  }
+  .theme .num { font-size: .8rem; font-weight: 700; color: var(--accent); letter-spacing: .1em; }
+  .theme h3 { font-family: var(--serif); font-size: 1.2rem; margin: 4px 0 12px; line-height: 1.5; }
+  .theme p { margin: 0 0 12px; } .theme p:last-child { margin: 0; }
+
+  blockquote {
+    margin: 0; padding: 4px 0 4px 18px; border-left: 3px solid var(--gold);
+    font-family: var(--serif); font-size: 1.08rem; line-height: 1.95;
+  }
+  .katie .by { margin: 12px 0 0; font-size: .86rem; color: var(--muted); }
+  .love {
+    margin-top: 18px; padding: 16px 22px; border-radius: var(--radius);
+    background: var(--gold-soft); font-family: var(--serif); font-size: 1.15rem; text-align: center;
+  }
+
+  .ending { text-align: center; padding: 36px 24px; background: var(--accent-soft); border-radius: var(--radius); }
+  .ending .q { font-family: var(--serif); font-size: 1.15rem; line-height: 1.9; margin: 0 0 14px; }
+  .ending .hash { margin: 0 0 4px; color: var(--accent); font-weight: 700; letter-spacing: .08em; }
+  .ending .date { margin: 0; color: var(--muted); font-size: .88rem; }
+
+  footer { margin-top: 48px; font-size: .82rem; color: var(--muted); line-height: 1.7; }
+  footer p { margin: 0 0 6px; }
+  footer i { font-style: italic; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="https://ccc99188-oss.github.io/">← 回到作品集</a>
+
+  <header class="hero">
+    <div class="emoji" aria-hidden="true">🏡</div>
+    <h1>心安在家</h1>
+    <p class="sub">拜倫·凱蒂《心安在家：拜倫凱蒂與金剛經的相遇》閱讀摘要與心得</p>
+    <p class="orig">A Mind at Home with Itself — Byron Katie with Stephen Mitchell</p>
+    <div class="facts"><span>轉念功課 The Work</span><span>四個問題</span><span>2024.12.15 寫於 Brookline, MA</span></div>
+    <div class="opening">
+      <blockquote>「唯一有意義的關係是你和你自己的關係。當你愛自己，你就是愛著那個永遠與你同在的人。除非你能愛你自己，否則你沒法和另一個人舒服自在地在一起，因為他或她遲早會挑戰你的信念系統。除非你能質疑你的信念，不然你將會發動戰爭來維護你的信念。」</blockquote>
+      <p class="src">引用自《心安在家：拜倫凱蒂與金剛經的相遇》。我參考原文後微調整一些字句。</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>與這本書的相遇</h2>
+    <ol class="journey">
+      <li data-ic="📚">
+        <b>在台灣：聽過、買過，卻沒有太深的體會</b>
+        <p>會遇到這本書也是個奇異恩典。早在台灣時，我就聽說過拜倫·凱蒂這位備受推崇的大師，也購買了她所有繁體中文翻譯的著作。然而，當時對於她所教導的「轉念功課」，我並沒有太深的體會。</p>
+      </li>
+      <li data-ic="🌱">
+        <b>來到美國：整個「砍掉重練」</b>
+        <p>來到美國後，我整個「砍掉重練」。從最基本的走路、吃飯、睡覺、和自己相處、和人相處...一切都從頭開始、從零開始學習。</p>
+      </li>
+      <li data-ic="👁️">
+        <b>練習感受，漸漸有了更多的「看見」</b>
+        <p>我開始練習感受身體、感受內在的感受。隨著時間推移，我漸漸有了更多的「看見」：看見自己的念頭，看到內心深處的渴望。我不再試圖否認或解釋它們，只是單純地見證一切，並透過身體去感受這份見證。</p>
+      </li>
+      <li data-ic="🏛️">
+        <b>在 Newton Free Library 意外重逢</b>
+        <p>某天，在Newton free library意外遇到《A Mind at Home with Itself》，中文譯名《心安在家：拜倫·凱蒂與金剛經的相遇》。</p>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>一次在身體裡的轉念</h2>
+    <div class="shift">
+      <div class="state cold">
+        <span class="tag">念頭：渴望被人認可</span>
+        <h3><span aria-hidden="true">🕳️</span>肚子裡冰冷的黑洞</h3>
+        <p>舉例來說，有一天，我看見自己「渴望被人認可」，這個感受在體內的位置大約是在肚子的中間（中脘穴或是太陽神經叢）。那裡像是一個很大的黑洞，不斷地往裡面吸東西，整個肚子感到冰冷，似乎無論怎麼樣都無法變得溫暖。</p>
+        <p>當時我沒有試圖去改變這種感受，就只是享受著這個空虛、冰冷感。幾天後，突然想起「哈科米的內在觀察小試驗」和「拜倫·凱蒂的一念之轉」，於是我嘗試將「渴望被人認可」這個念頭反轉，變成「我認同所有的人」，再丟進自己身體，看看會發生什麼事？</p>
+      </div>
+      <div class="turn">
+        <span class="arrow" aria-hidden="true">↓</span>
+        反轉念頭，丟進身體<br>
+        <span class="pair"><s>渴望被人認可</s> → 我認同所有的人</span>
+      </div>
+      <div class="state warm">
+        <span class="tag">反轉：我認同所有的人</span>
+        <h3><span aria-hidden="true">☀️</span>黑洞變成了太陽</h3>
+        <p>令人意想不到的是，那個肚子裡的黑洞瞬間變成了太陽一般，不斷地向外輻射出溫暖的熱能。而且，我驚訝地發現，自己很難再去批評別人了（批評他人，曾是我過去非常擅長的事情）。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>疑問與印證</h2>
+    <div class="question">
+      <p class="q">這經歷讓我產生了一個疑問：</p>
+      <p>我懷疑拜倫·凱蒂的「轉念功課」不應該停留在頭腦的理智層面打轉，因為我們很難透過既有的信念系統來拆解自己的信念。不管怎麼拆，都可能只是自我逃避或自我安慰，始終無法真正突破困境。</p>
+    </div>
+
+    <article class="theme" style="margin-top:18px">
+      <div class="num">印證</div>
+      <h3>不是用頭腦「想」出來，而是透過身體去感受</h3>
+      <p>回家後，我開始搜尋譯者及相關資料，並重新觀看了拜倫·凱蒂的 YouTube 影片，這一切證實了我的猜測：雖然她的教導被中文翻譯為「轉念」，但這並不是透過頭腦的思考去「想」出來的，而是要透過身體去感受。</p>
+      <p>她雖然提供了「四個問題」，但目的並不是讓我們自問自答，而是要我們質疑自己念頭的真實性，並且見證這份質疑的過程。我認為這才是中文語境下對她教導的正確理解。</p>
+    </article>
+  </section>
+
+  <section>
+    <h2>真的很簡單嗎？</h2>
+    <article class="theme">
+      <div class="num">01</div>
+      <h3>看見念頭、超越思維，需要練習出來的覺察力</h3>
+      <p>拜倫·凱蒂說這個方法非常簡單。然而，我並不這麼認為。</p>
+      <p>因為要能看見自己的念頭，並且超越思維的限制，再進一步目睹這一切，這個過程需要較高階的覺察能力。而這種覺察力，並不是一般人與生俱來的，它需要透過持續且刻意的練習與培養，才能在大腦中逐漸建立起具備這些功能的神經網絡。</p>
+    </article>
+    <article class="theme">
+      <div class="num">02</div>
+      <h3>學員的「鬼打牆」，與她的耐心</h3>
+      <p>我們可以從書中記錄的「拜倫·凱蒂與學員的完整對話內容」中看出，許多學員在進行「功課」時會反覆卡在同一個念頭上，就像是「鬼打牆」一樣。而拜倫·凱蒂則展現出極大的耐心，等待著、陪伴著他們，直到他們能夠看見並穿透自己的念頭。</p>
+    </article>
+  </section>
+
+  <section class="katie">
+    <h2>她說：靜候等待</h2>
+    <blockquote>「我環顧四周，觀察到人們試圖以他們所相信的種種來嚇自己，無辜地製造出自己的恐懼、憤怒和不幸，把和現實抗爭的論點拿來作為證明。而我靜候等待。每一個心智最終都會找到自己的來時路。能見證一個原本如此堅信不移的心智，最終消融於空無，安歇在簡單的現實裡，是一件美好的事。」</blockquote>
+    <p class="by">—— 拜倫·凱蒂</p>
+    <div class="love">真是大愛啊~~~</div>
+  </section>
+
+  <section>
+    <h2>要讀哪個版本？</h2>
+    <div class="card">
+      <p>我對照了英文原文與繁體中文翻譯，覺得語意是很相近的。如果對於拜倫·凱蒂的教導有興趣，我認為可以看繁體中文的版本就好了。</p>
+      <p>畢竟重點都不在這些文字內容，而是在於有沒有「持續質疑自己念頭的真實性」。</p>
+    </div>
+  </section>
+
+  <section class="ending">
+    <p class="q">拜倫·凱蒂說，她在開悟之後還持續不斷的質問自己的念頭長達一年之久。我想我們這些滿腦子煩惱的人，如果能每天花個三、五分鐘，把腦袋敲個洞，讓光透進來，這樣就不錯了。</p>
+    <p class="hash">#靜候等待</p>
+    <p class="date">2024.12.15 寫於 Brookline, MA</p>
+  </section>
+
+  <footer>
+    <p>原書：Byron Katie with Stephen Mitchell，<i>A Mind at Home with Itself</i>；繁體中文版《心安在家：拜倫凱蒂與金剛經的相遇》。</p>
+    <p>摘要與心得為讀者個人整理。</p>
+  </footer>
+</main>
+
+</body>
+</html>
